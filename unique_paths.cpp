@@ -1,3 +1,6 @@
+// DP question - base case vec[-1][-1] = 1 and 
+// vec[i][j] = vec[i+1][j] + vec[i][j+1
+
 #include <bits/stdc++.h>
 using namespace std;
 

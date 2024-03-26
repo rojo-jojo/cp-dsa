@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 #include<iostream>
+#include <sstream>
 using namespace std;
 
 void solve(string s) {
@@ -29,12 +30,27 @@ int main() {
     cin.tie(0); cout.tie(0);
     
 
-    string s;
-    int t;
+    
+    int t, n, enterNumber;
     cin >> t;
+
     while (t--) {
-        cin >> s;
-        solve(s);
+        cin >> n;
+        vector <vector <int>> matrix;
+        while (n--) {
+            vector <int> row;
+            string line;
+            getline(cin, line);
+            istringstream iss(line);
+            while (iss >> enterNumber) {
+                row.push_back(enterNumber);
+            }
+            cout << "A row output:\n";
+            for (int i=0; i < row.size(); i++){
+                cout << row[i] << ", ";
+            }
+            cout << endl;
+        }
     }
     return 0;
 }

@@ -1,5 +1,2 @@
-for i in range(10):
-    print("This is i: ", i)
-    for j in range(3):
-        if j == 2: break
-        print("This is j:", j)
+vals = [{"name": 5}, {"name":7}, {"name":13}]
+print("Max is ", max(vals, key=lambda x:x["name"]))
